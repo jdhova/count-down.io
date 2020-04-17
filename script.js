@@ -32,7 +32,11 @@ const y = Math.floor(interval/1000/60/60/24/12/30);
 
 }
 
-
+// Show spinner before countdown
+setTimeout(() => {
+    loading.remove();
+    countdown.style.display = 'flex';
+  }, 1000);
 
 
 

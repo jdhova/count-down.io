@@ -22,12 +22,12 @@ const y = Math.floor(interval/1000/60/60/24/12/30);
  const h = Math.floor( (interval/(1000*60*60)) % 24 );
  const sec = Math.floor( (interval/1000) % 60 );
 
- days.innerHTML = d
- hours.innerHTML = h
- minutes.innerHTML = min
- seconds.innerHTML = sec
- years.innerHTML = y
- months.innerHTML = m
+ days.innerHTML = d < 10 ? '0' + d : d; 
+ hours.innerHTML = h < 10 ? '0' + h : h;
+ minutes.innerHTML = min < 10 ? '0'+ min : min;
+ years.innerHTML = y < 10 ? '0' + y : y;
+ months.innerHTML = m < 10 ? '0' + m : m;
+ seconds.innerHTML = sec < 10 ? '0' + sec : sec;
 
 
 }
